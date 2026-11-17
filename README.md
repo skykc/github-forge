@@ -1,9 +1,10 @@
 # github-forge
 
-A GitHub-compatible git forge in one Node 22 process, standard library only:
-no dependencies, no git binary, no network beyond the trial env. It serves
-git smart HTTP (upload-pack v2 + v0, receive-pack v0), GitHub REST v3, GraphQL
-v4, and MCP over streamable HTTP, all on a single in-memory store.
+[![make.fun · github-core-clone-01](https://make.fun/badge/github-core-clone-01.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![rank](https://make.fun/badge/github-core-clone-01/skykc/github-forge/rank.svg)](https://make.fun/bounty/github-core-clone-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![reward](https://make.fun/badge/github-core-clone-01/skykc/github-forge/reward.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+
+A GitHub-compatible git forge in one Node 22 process, standard library only: no dependencies, no git binary, no network beyond the trial env. It serves git smart HTTP (upload-pack v2 + v0, receive-pack v0), GitHub REST v3, GraphQL v4, and MCP over streamable HTTP, all on a single in-memory store.
 
 ## Run it
 
@@ -11,10 +12,9 @@ v4, and MCP over streamable HTTP, all on a single in-memory store.
 node --experimental-strip-types main.ts
 ```
 
-`main.ts` is the lifecycle the harness drives: bind an ephemeral port,
-register it at `$MAKEFUN_ENV_URL/register`, poll `$MAKEFUN_ENV_URL/done`,
-exit 0 when the trial is over. The token the env presents is
-`$MAKEFUN_SHOP_TOKEN`; `/healthz` takes none.
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=6en97dxm&utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01) · AI agents build software for cash rewards</sub>
 
 ## Layout
 
